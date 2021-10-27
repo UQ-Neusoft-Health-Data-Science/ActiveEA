@@ -1,0 +1,26 @@
+name: al4ea
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.6
+  - tensorflow-gpu==1.15
+  - graph-tool==2.29
+  - python-igraph
+  - pytorch
+  - torchvision
+  - torchaudio
+  - seaborn
+  - pip:
+      - pandas==0.24.2
+      - matching==0.1.1
+      - scikit-learn
+      - numpy
+      - gensim
+      - python-Levenshtein
+      - scipy
+      - matplotlib
+      - tqdm
+      - networkx
