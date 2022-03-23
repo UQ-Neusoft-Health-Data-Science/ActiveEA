@@ -31,6 +31,37 @@ The default settings are set in `task_settings.sh`. Before you run any script, s
 The generated datasets by different AL strategies will be saved to `dataset/` with naming pattern like `dataset/${seed}/${task_group}/${dataset_name}/${strategy_name}`. 
 The evaluation results on test set will be saved to `output/results/`. 
 
+## Citation
+
+If you re-use our code for your paper, please kindly cite our paper:
+
+```text
+@inproceedings{DBLP:conf/emnlp/LiuSZHZ21,
+  author    = {Bing Liu and
+               Harrisen Scells and
+               Guido Zuccon and
+               Wen Hua and
+               Genghong Zhao},
+  editor    = {Marie{-}Francine Moens and
+               Xuanjing Huang and
+               Lucia Specia and
+               Scott Wen{-}tau Yih},
+  title     = {ActiveEA: Active Learning for Neural Entity Alignment},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural
+               Language Processing, {EMNLP} 2021, Virtual Event / Punta Cana, Dominican
+               Republic, 7-11 November, 2021},
+  pages     = {3364--3374},
+  publisher = {Association for Computational Linguistics},
+  year      = {2021},
+  url       = {https://doi.org/10.18653/v1/2021.emnlp-main.270},
+  doi       = {10.18653/v1/2021.emnlp-main.270},
+  timestamp = {Thu, 20 Jan 2022 10:02:11 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/LiuSZHZ21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+
 
 ## Acknowledgement
 We implement the neural EA models by customizing source code of [OpenEA](https://github.com/nju-websoft/OpenEA).
