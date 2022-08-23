@@ -7,20 +7,16 @@ channels:
 dependencies:
   - python=3.6
   - tensorflow-gpu==1.15
-  - graph-tool==2.29
-  - python-igraph
-  - pytorch
-  - torchvision
+  - pytorch==1.4.0
+  - torchvision==0.5.0
   - torchaudio
-  - seaborn
+  - pip
   - pip:
+      - tqdm==4.56.0
+      - scikit-learn==0.23.2
       - pandas==0.24.2
       - matching==0.1.1
-      - scikit-learn
       - numpy
-      - gensim
-      - python-Levenshtein
       - scipy
       - matplotlib
-      - tqdm
       - networkx

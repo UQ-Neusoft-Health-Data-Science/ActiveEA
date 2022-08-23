@@ -5,7 +5,7 @@ if [ ! "$1" = "" ]; then
 fi
 
 script_dir=$(dirname "$PWD/${0}")
-. $script_dir/../modules/env_settings_${machine}.sh
+. $script_dir/../modules/env_settings.sh
 
 
 lower_model_name="$(echo $model_name | tr '[A-Z]' '[a-z]')"

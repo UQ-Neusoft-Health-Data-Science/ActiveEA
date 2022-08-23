@@ -9,11 +9,20 @@ Source code of paper "ActiveEA: Active Learning for Neural Entity Alignment", wh
 from [wiki-news-300d-1M.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) 
 and put the unzipped file under `dataset/`.
 Otherwise, skip this step (the size of unzipped word embedding file will be 2.26GB).
-- Step 3: Install conda environment
+- Step 3: Install conda environment.
+`cd` to your project directory firstly. Then, create the environment using command below.
 ```shell script
-cd /path_to_proj/al4ea/
 conda env create -f environment.yml
 ```
+Then, activate the environment as `conda activate al4ea`, and install more packages using the following commands
+
+```shell
+conda install -c conda-forge graph-tool==2.29
+pip install igraph
+pip install python-Levenshtein
+pip install gensim==4.0.1
+```
+
 
 - Step 4: Configure settings.
 The scripts to run are under `scripts/run_strategies/`

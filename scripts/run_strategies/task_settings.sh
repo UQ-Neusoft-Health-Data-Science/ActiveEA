@@ -22,19 +22,11 @@ dropout_ratio=0.1
 
 
 ## ==>> running env settings
-export CUDA_VISIBLE_DEVICES="1"
+export CUDA_VISIBLE_DEVICES="0"
 
 
 # task, model, and data size, overall_perf, effect_of_alpha, effect_of_batchsize, effect_of_bachpercent
 task_group=overall_perf
 
 
-# options: server, wiener
-machine=server
-
-proj_dir=""
-if [ "$proj_dir" = "" ]; then
-    echo "ERROR: please set proj_dir in 'task_settings.sh' firstly"
-    exit 1
-fi
 

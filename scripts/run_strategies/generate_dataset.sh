@@ -6,7 +6,7 @@ if [ ! "$1" = "" ]; then
 fi
 
 script_dir=$(dirname "$PWD/${0}")
-. $script_dir/../modules/env_settings_${machine}.sh
+. $script_dir/../modules/env_settings.sh
 
 dataset_name=${data_name}_BACH${bachelor_percent}_${model_name}
 init_data_dir="${proj_dir}/dataset/${seed}/${task_group}/${dataset_name}/INIT"
@@ -18,9 +18,9 @@ raw_data_dir="${new_al4ea_data_dir}/RAW"
 
 
 if [ -d $new_al4ea_data_dir ]; then
-#  rm -r $new_al4ea_data_dir
- echo "WARNING: the specified directory already exists"
- exit 1
+  rm -r $new_al4ea_data_dir
+# echo "WARNING: the specified directory already exists"
+# exit 1
 fi
 mkdir -p $new_al4ea_data_dir
 cp -r $src_ea_data_dir $raw_data_dir

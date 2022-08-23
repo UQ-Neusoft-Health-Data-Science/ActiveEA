@@ -11,7 +11,7 @@ cd $proj_dir
 # prepare conda env
 export PYTHONPATH=$proj_dir
 eval "$(conda shell.bash hook)"
-conda activate al4ea_review
+conda activate al4ea
 
 py_exe_fn=python
 

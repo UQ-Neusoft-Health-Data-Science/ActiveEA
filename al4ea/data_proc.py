@@ -71,7 +71,9 @@ if __name__ == "__main__":
     data_dir = args.data_dir
 
     seed_everything(args.seed)
+    print("generate bachelors")
     generate_bachelors(data_dir, bachelor_ratio=args.bachelor_ratio)
+    print("set up AL settings")
     generate_al_settings(data_dir=data_dir)
 
 
