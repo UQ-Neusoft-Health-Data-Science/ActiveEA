@@ -18,20 +18,20 @@ sh run_degree.sh $setting_fn
 sh run_pagerank.sh $setting_fn
 sh run_between.sh $setting_fn
 sh run_uncertainty.sh $setting_fn
-#sh run_struct_uncertainty.sh $setting_fn
-#
-#if [ ! $model_name = "BootEA" ]; then
-#  sh run_deep_uncertainty.sh $setting_fn
-#  sh run_deep_struct_uncertainty.sh $setting_fn
-#fi
-#
-#
-#if [ 1 -eq $(echo "$bachelor_percent > 0.0" | bc -l) ]; then
-#  sh run_struct_uncertainty_bachelor_recog.sh $setting_fn
-#  if [ ! $model_name = "BootEA" ]; then
-#    sh run_deep_struct_uncertainty_bachelor_recog.sh $setting_fn
-#  fi
-#fi
+sh run_struct_uncertainty.sh $setting_fn
+
+if [ ! $model_name = "BootEA" ]; then
+  sh run_deep_uncertainty.sh $setting_fn
+  sh run_deep_struct_uncertainty.sh $setting_fn
+fi
+
+
+if [ 1 -eq $(echo "$bachelor_percent > 0.0" | bc -l) ]; then
+  sh run_struct_uncertainty_bachelor_recog.sh $setting_fn
+  if [ ! $model_name = "BootEA" ]; then
+    sh run_deep_struct_uncertainty_bachelor_recog.sh $setting_fn
+  fi
+fi
 
 
 

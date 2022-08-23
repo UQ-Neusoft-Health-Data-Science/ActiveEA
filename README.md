@@ -1,10 +1,10 @@
 # ActiveEA
 
-Source code of paper "ActiveEA: Active Learning for Neural Entity Alignment", which has been accepted at EMNLP 2021.
+Source code of paper "ActiveEA: Active Learning for Neural Entity Alignment", which has been published in EMNLP 2021.
 
 ## Steps of reproducing the experiments:
 
-- Step 1: Download and unzip the repo. Suppose it is put under `/path_to_proj/` and we refer the directory under it with relative path. 
+- Step 1: Download and unzip the repo. 
 - Step 2: If you need to run our strategies on RDGCN, you need to download the open word embedding file 
 from [wiki-news-300d-1M.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) 
 and put the unzipped file under `dataset/`.
@@ -14,7 +14,7 @@ Otherwise, skip this step (the size of unzipped word embedding file will be 2.26
 ```shell script
 conda env create -f environment.yml
 ```
-Then, activate the environment as `conda activate al4ea`, and install more packages using the following commands
+Then, activate the environment via `conda activate al4ea`, and install more packages using the following commands
 
 ```shell
 conda install -c conda-forge graph-tool==2.29
